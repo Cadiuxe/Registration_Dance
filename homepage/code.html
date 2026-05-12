@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DDC Divine Dance Championship | Home</title>
+<!-- Google Fonts: Anybody, Montserrat, Space Grotesk -->
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Montserrat:wght@400;700&amp;family=Space+Grotesk:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-high": "#292a2a",
+                "on-tertiary-container": "#dddede",
+                "primary-container": "#be1e2d",
+                "secondary-fixed": "#e5e2e1",
+                "on-surface": "#e3e2e2",
+                "on-primary": "#68000f",
+                "inverse-on-surface": "#2f3031",
+                "on-secondary-container": "#b7b5b4",
+                "tertiary-fixed": "#e2e2e2",
+                "on-primary-container": "#ffd3d1",
+                "on-surface-variant": "#e3bebb",
+                "background": "#121414",
+                "surface-container-low": "#1b1c1c",
+                "inverse-primary": "#b91a2a",
+                "secondary": "#c8c6c5",
+                "on-secondary-fixed": "#1c1b1b",
+                "tertiary-fixed-dim": "#c6c6c7",
+                "primary-fixed": "#ffdad8",
+                "surface": "#121414",
+                "primary-fixed-dim": "#ffb3b0",
+                "surface-tint": "#ffb3b0",
+                "outline": "#aa8987",
+                "surface-dim": "#121414",
+                "secondary-container": "#474746",
+                "surface-container-highest": "#343535",
+                "secondary-fixed-dim": "#c8c6c5",
+                "on-tertiary-fixed": "#1a1c1c",
+                "inverse-surface": "#e3e2e2",
+                "outline-variant": "#5b403f",
+                "surface-container-lowest": "#0d0e0f",
+                "on-tertiary": "#2f3131",
+                "on-secondary": "#313030",
+                "error-container": "#93000a",
+                "on-primary-fixed": "#410006",
+                "on-secondary-fixed-variant": "#474746",
+                "error": "#ffb4ab",
+                "primary": "#ffb3b0",
+                "surface-container": "#1f2020",
+                "surface-variant": "#343535",
+                "on-error-container": "#ffdad6",
+                "on-primary-fixed-variant": "#930019",
+                "tertiary-container": "#606262",
+                "tertiary": "#c6c6c7",
+                "on-tertiary-fixed-variant": "#454747",
+                "surface-bright": "#383939",
+                "on-error": "#690005",
+                "on-background": "#e3e2e2"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "base": "8px",
+                "container-max-width": "1280px",
+                "margin-mobile": "16px",
+                "gutter": "24px"
+            },
+            "fontFamily": {
+                "display-lg": ["anybody"],
+                "body-lg": ["montserrat"],
+                "label-sm": ["spaceGrotesk"],
+                "body-md": ["montserrat"],
+                "headline-md": ["anybody"],
+                "headline-lg": ["anybody"],
+                "headline-lg-mobile": ["anybody"]
+            },
+            "fontSize": {
+                "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .crimson-glow {
+            box-shadow: 0 0 20px 2px rgba(190, 30, 45, 0.4);
+        }
+        .crimson-glow:hover {
+            box-shadow: 0 0 35px 5px rgba(190, 30, 45, 0.6);
+        }
+        .text-gradient-primary {
+            background: linear-gradient(180deg, #ffb3b0 0%, #be1e2d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Shell -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl docked full-width top-0 z-50 sticky border-b border-outline-variant/30 shadow-lg shadow-primary-container/20">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto">
+<div class="text-headline-md font-display-lg font-bold text-primary dark:text-primary">
+                DDC Divine Dance Championship
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-display-lg text-label-sm uppercase tracking-widest text-primary dark:text-primary border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Home</a>
+<a class="font-display-lg text-label-sm uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Categories</a>
+<a class="font-display-lg text-label-sm uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Rules</a>
+<a class="font-display-lg text-label-sm uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Sponsors</a>
+<a class="font-display-lg text-label-sm uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Register</a>
+</div>
+<button class="scale-95 active:scale-90 transition-transform bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-sm uppercase tracking-widest crimson-glow">
+                Register Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+<!-- Background Image with Flowing Waves -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="A dramatic and high-energy background featuring abstract, flowing deep red ribbon motifs and light waves cascading across a dark charcoal stage. The lighting is cinematic with subtle glows emanating from the edges of the red curves, creating a sense of dynamic movement and prestigious energy. The aesthetic is high-contrast, modern, and professional, perfectly suited for an elite dance championship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy52Ckbl0hTeMiEFrOfN_vMPHwEb1Z_fmS39EnnblV3HM_Sg19VOdMWXczka9JKEbyAZm7D9e3cOVF826bgspC-YM9_FLmht6z5aBkoz2Qi_5DU2TvsUrBQEr8JlesVo-aFlPQ-B6sJNhTMjUxFLfOlaPM2qR746muLpuOB4lOHkLU7DwXgbppFFi5hCH-6VKMXE6NoIf2QTmDgKZqcP9qk42ctpi0lwBX7F3EPBpYeVG7WMEZjQD2Tchnl_Sg9A7la5sBpBlZCQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/80 via-transparent to-surface/80"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl mx-auto">
+<span class="inline-block font-label-sm text-primary tracking-[0.4em] uppercase mb-4 bg-primary-container/10 px-4 py-1 rounded-full border border-primary/20">
+                    Season 2
+                </span>
+<h1 class="font-display-lg text-[120px] md:text-[200px] leading-none text-gradient-primary mb-2 select-none">
+                    DDC
+                </h1>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface uppercase tracking-tight mb-8">
+                    Divine Dance Championship
+                </h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<span class="font-body-lg text-on-surface-variant">May 30th</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="font-body-lg font-bold text-primary">Start Time: 8 AM</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="font-body-lg text-on-surface-variant italic">Feel The Beat • Own The Stage</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center">
+<button class="bg-primary-container hover:bg-primary text-on-primary-container font-label-sm uppercase tracking-widest px-10 py-5 rounded-lg crimson-glow transition-all duration-300">
+                        Explore Categories
+                    </button>
+<button class="border-2 border-on-surface/20 hover:border-primary text-on-surface font-label-sm uppercase tracking-widest px-10 py-5 rounded-lg transition-all duration-300 backdrop-blur-sm">
+                        Watch Trailer
+                    </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="text-label-sm uppercase tracking-widest">Scroll</span>
+<div class="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Bento Highlights Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden group">
+<div class="relative h-80">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-intensity action shot of a professional dancer performing a powerful leap on a dark, smoke-filled stage illuminated by sharp red spotlights. The image captures the tension and athletic grace of competitive dance with high contrast and cinematic lighting. The color palette is dominated by deep blacks and vibrant crimsons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF3ImuWa-YwhQ51y2X2S8H75-szY1NfQ3Ayz-8guTSKKQNVzl94mm0QtuGrAzvBPtGo62UNk1wyJVijq7b4sUXWdztYW0MtaHkMTZUcFEo3E7fvXix1Qbubuf69hE-GkL6K3aA1f3hk5ZKZq1BtXwF78Bm8JJjsmuXpuVvfD6FDLOXZ8MLL8pRXGCvAePc-ye85z342-6Kl3IQLb9A9f__Rni-Q3hvCgwYqD18RCq8kLcUSyzIwXW7a2Pg0_yeyMvJmavrs4lL3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary text-on-primary-container px-3 py-1 text-label-sm uppercase rounded mb-3 inline-block">Elite Division</span>
+<h3 class="font-headline-md text-on-surface">National Level Platform</h3>
+</div>
+</div>
+<div class="p-8">
+<p class="font-body-md text-on-surface-variant max-w-xl">
+                            Join over 500 dancers from across the country for the ultimate showcase of talent, technique, and creative expression.
+                        </p>
+</div>
+</div>
+<!-- Vertical Stats Card -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-8 flex flex-col justify-between crimson-glow">
+<div>
+<span class="material-symbols-outlined text-[48px] mb-4" style="font-variation-settings: 'FILL' 1;">trophy</span>
+<h3 class="font-display-lg text-headline-lg leading-tight">Rs. 4 Lakh<br/>Prize Pool</h3>
+</div>
+<p class="font-label-sm uppercase tracking-tighter opacity-80 mt-8">
+                        The biggest rewards for the boldest performances of 2026.
+                    </p>
+</div>
+<!-- Small Grid Items -->
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">history</span>
+<h4 class="font-headline-md mb-2">10+ Years</h4>
+<p class="font-body-md text-on-surface-variant">A decade of defining dance excellence and legacy.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">groups</span>
+<h4 class="font-headline-md mb-2">Expert Judges</h4>
+<p class="font-body-md text-on-surface-variant">Evaluated by world-class choreographers and masters.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">location_on</span>
+<h4 class="font-headline-md mb-2">Main Arena</h4>
+<p class="font-body-md text-on-surface-variant">State-of-the-art venue with professional flooring.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/5 z-0"></div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-lg text-headline-lg mb-6">Ready to Own the Stage?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Registration is open for all solo, duo, and group categories. Secure your spot in the championship today.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary-container text-on-primary-container font-label-sm uppercase tracking-widest px-12 py-4 rounded-lg crimson-glow transition-all">
+                        Register Now
+                    </button>
+<button class="bg-surface-container-highest text-on-surface font-label-sm uppercase tracking-widest px-12 py-4 rounded-lg transition-all">
+                        Download Rules
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-primary/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 gap-gutter max-w-container-max-width mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-display-lg text-headline-md text-on-surface">DDC</div>
+<p class="text-on-surface-variant text-body-md text-center md:text-left max-w-xs">
+                    The ultimate platform for dancers to showcase their divine talent and passion.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sponsorship</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">public</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">play_circle</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">photo_camera</span>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 py-6 text-center">
+<p class="text-on-surface-variant font-body-md opacity-60">© 2026 Divine Dance Championship. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
