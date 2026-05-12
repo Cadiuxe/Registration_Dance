@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DDC — Divine Dance Championship | Season 2</title>
+  <meta name="description" content="Join 500+ dancers from across the nation at the Divine Dance Championship Season 2. Rs. 4 Lakh prize pool. May 30th, 2026. Register now!" />
+  <meta name="keywords" content="dance championship, DDC, Divine Dance Championship, dance competition, Season 2" />
+  <meta name="theme-color" content="#BE1E2D" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__ring"></div>
+      <span class="preloader__text">DDC</span>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING PARTICLES CANVAS ===== -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__brand" id="nav-brand">
+        <span class="navbar__brand-text">DDC</span>
+        <span class="navbar__brand-sub">Divine Dance Championship</span>
+      </a>
+
+      <div class="navbar__links" id="nav-links">
+        <a href="#hero" class="navbar__link active" data-section="hero">Home</a>
+        <a href="#about" class="navbar__link" data-section="about">About</a>
+        <a href="#categories" class="navbar__link" data-section="categories">Categories</a>
+        <a href="#rules" class="navbar__link" data-section="rules">Rules</a>
+        <a href="#faq" class="navbar__link" data-section="faq">FAQ</a>
+      </div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--nav" id="nav-register-btn">
+        Register Now
+      </a>
+
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" id="mobile-menu">
+      <a href="#hero" class="navbar__mobile-link" data-section="hero">Home</a>
+      <a href="#about" class="navbar__mobile-link" data-section="about">About</a>
+      <a href="#categories" class="navbar__mobile-link" data-section="categories">Categories</a>
+      <a href="#rules" class="navbar__mobile-link" data-section="rules">Rules</a>
+      <a href="#faq" class="navbar__mobile-link" data-section="faq">FAQ</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--mobile-register">Register Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero__ribbon hero__ribbon--1"></div>
+      <div class="hero__ribbon hero__ribbon--2"></div>
+      <div class="hero__ribbon hero__ribbon--3"></div>
+      <div class="hero__glow"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge reveal" data-delay="0">
+        <span>Season 2</span>
+      </div>
+      <h1 class="hero__title reveal" data-delay="100">DDC</h1>
+      <p class="hero__subtitle reveal" data-delay="200">Divine Dance Championship</p>
+      <div class="hero__meta reveal" data-delay="300">
+        <span class="hero__meta-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          May 30th
+        </span>
+        <span class="hero__meta-dot">·</span>
+        <span class="hero__meta-item hero__meta-item--bold">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Start Time: 8 AM
+        </span>
+        <span class="hero__meta-dot">·</span>
+        <span class="hero__meta-item hero__meta-item--italic">Feel The Beat · Own The Stage</span>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--hero magnetic-btn reveal" data-delay="400" id="hero-register-btn">
+        Register Now
+      </a>
+    </div>
+    <div class="hero__scroll reveal" data-delay="600">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about__grid">
+        <!-- Left: Image Card -->
+        <div class="about__image-card reveal-left">
+          <div class="about__image-wrapper">
+            <img src="screen.png" alt="Dancer performing at DDC" class="about__image" loading="lazy" />
+            <div class="about__image-overlay"></div>
+          </div>
+          <div class="about__image-badge">
+            <span class="about__image-badge-tag">National Level</span>
+          </div>
+          <h3 class="about__image-title">National Level Platform</h3>
+          <p class="about__image-desc">Join over 500 dancers from across the country for the ultimate showcase of talent, technique, and creative expression.</p>
+        </div>
+
+        <!-- Right: Prize Pool Card -->
+        <div class="about__prize-card reveal-right">
+          <div class="about__prize-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 21h8m-4-4v4m-5.2-4h10.4c1.68 0 2.52 0 3.16-.33a3 3 0 001.31-1.31c.33-.64.33-1.48.33-3.16V7.8c0-1.68 0-2.52-.33-3.16a3 3 0 00-1.31-1.31C19.72 3 18.88 3 17.2 3H6.8c-1.68 0-2.52 0-3.16.33a3 3 0 00-1.31 1.31C2 5.28 2 6.12 2 7.8v4.4c0 1.68 0 2.52.33 3.16a3 3 0 001.31 1.31c.64.33 1.48.33 3.16.33z"/></svg>
+          </div>
+          <h2 class="about__prize-amount">Rs. 4 Lakh<br/>Prize Pool</h2>
+          <p class="about__prize-desc">The biggest rewards for the boldest performances of 2026.</p>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="about__stats">
+        <div class="about__stat-card reveal-up" data-delay="0">
+          <div class="about__stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4 class="about__stat-title">10+ Years</h4>
+          <p class="about__stat-desc">A decade of defining dance excellence and legacy.</p>
+        </div>
+        <div class="about__stat-card reveal-up" data-delay="150">
+          <div class="about__stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4 class="about__stat-title">Expert Judges</h4>
+          <p class="about__stat-desc">Evaluated by world-class choreographers and masters.</p>
+        </div>
+        <div class="about__stat-card reveal-up" data-delay="300">
+          <div class="about__stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4 class="about__stat-title">Main Arena</h4>
+          <p class="about__stat-desc">State-of-the-art venue with professional flooring.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES SECTION ===== -->
+  <section id="categories" class="categories section">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <span class="section__label">Competition</span>
+        <h2 class="section__title">Competition Categories</h2>
+        <p class="section__desc">Step into the spotlight. Choose your category and join the elite performers at the 2026 Divine Dance Championship.</p>
+      </div>
+
+      <!-- Top row: 3 cards -->
+      <div class="categories__grid categories__grid--3 reveal-up">
+
+        <!-- Junior Solo -->
+        <div class="category-card-v2">
+          <div class="category-card-v2__image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-TJbTpdCJh_ENf1Yq4uxCUSy-rYBEfmn35m1xkdbGltD3fZhXvSzDN-5TwClDdnH2MuPWLkTT3EQVwvlWRE_uSxA2uAD93Jx5ruW7L_y676G8dOinNXcW3cvxd4FQt_wFxGPA6JW14UPmVSqVjcKQyKOdBc_7r86XFu6P8Racjrfgejz5iny4MOfFWKWoeBBV6pA2fN64W_nriwjLFFkA0RJx3WLZCsoHKETEc7ENonop-HN8OMHK2x9Jpnd0bqwvVko17lF6bA" alt="Junior Solo dancer" loading="lazy" />
+            <div class="category-card-v2__image-overlay"></div>
+            <span class="category-card-v2__badge">4-13 YEARS</span>
+          </div>
+          <div class="category-card-v2__body">
+            <h3 class="category-card-v2__title">Junior Solo</h3>
+            <p class="category-card-v2__desc">Unleash the prodigy within. A stage for young solo artists to demonstrate technique and flair.</p>
+            <div class="category-card-v2__price-row">
+              <span class="category-card-v2__price">₹1000</span>
+              <span class="category-card-v2__price-label">Registration Fee</span>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full magnetic-btn">Register Now</a>
+            <div class="category-card-v2__contact">
+              <p>For queries call:</p>
+              <p>Apeksha – 87928 96356</p>
+              <p>Yashwanth – 8618261766</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Senior Solo -->
+        <div class="category-card-v2">
+          <div class="category-card-v2__image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUgU3IPrKESYhbpiXRZoDea_gh6OS0thbyqocSkTMjBrtdKwgg29LHGy9Yfu6YsQQAw75nRF5e_N05YQ5ChUa1VZdBnDW8OfoWPI3oaLfYzxTd2Vo6i1fSpCpldQvaKnncuAiJUpTHBvsPBYyVtCBnfp3UBragihcKV0PffeySokx5Vm-yn2qEYNfaWOIas-mYVJdJy_5z_owLdkngNpLI66PrH7GuxtdfWRPLGXv1ggVRdy_0GDkkDHZuSadWoPYZe-xMen_0Yg" alt="Senior Solo dancer" loading="lazy" />
+            <div class="category-card-v2__image-overlay"></div>
+            <span class="category-card-v2__badge">ABOVE 14 YEARS</span>
+          </div>
+          <div class="category-card-v2__body">
+            <h3 class="category-card-v2__title">Senior Solo</h3>
+            <p class="category-card-v2__desc">The elite stage. For experienced dancers who push the boundaries of artistry and athleticism.</p>
+            <div class="category-card-v2__price-row">
+              <span class="category-card-v2__price">₹1500</span>
+              <span class="category-card-v2__price-label">Registration Fee</span>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full magnetic-btn">Register Now</a>
+            <div class="category-card-v2__contact">
+              <p>For queries call:</p>
+              <p>Apeksha – 87928 96356</p>
+              <p>Yashwanth – 8618261766</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duet -->
+        <div class="category-card-v2">
+          <div class="category-card-v2__image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-_bJ_C_ZabFi77c1UCtX8sRRb56o7so5oARG7Z6MPMyLf6AYA-cTHsyj9a3Hc8IN_ENIFcyEJKTw9pctmP44YiwCyVmFvKPs9sD8jrBlTYuiDUw3z5y-JjuQ6FI6wEyujyTtIuwOgExTMw-wT1v4LswrEjb6CHsE6JUdFeOBJoJ5XsMhNeefwhFmyANSUl81UwBC0aI_VBL3FwaxKBTU9mYkpjmbBOxjNdlWpM1ActozNNIU20VfUp2ZHjAUsU283Nj6x042lvw" alt="Duet dancers" loading="lazy" />
+            <div class="category-card-v2__image-overlay"></div>
+            <span class="category-card-v2__badge">ALL AGES</span>
+          </div>
+          <div class="category-card-v2__body">
+            <h3 class="category-card-v2__title">Duet</h3>
+            <p class="category-card-v2__desc">Synchronization and chemistry. Showcase the power of partnership on the grand stage.</p>
+            <div class="category-card-v2__price-row">
+              <span class="category-card-v2__price">₹2500</span>
+              <span class="category-card-v2__price-label">Registration Fee</span>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full magnetic-btn">Register Now</a>
+            <div class="category-card-v2__contact">
+              <p>For queries call:</p>
+              <p>Apeksha – 87928 96356</p>
+              <p>Yashwanth – 8618261766</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: 2 cards -->
+      <div class="categories__grid categories__grid--2 reveal-up" data-delay="200">
+
+        <!-- Group Junior -->
+        <div class="category-card-v2">
+          <div class="category-card-v2__image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoS5OoaZ8R0YblrS-t1UcpCwzzZapsAkPP8-PDRhhJcLC9p1dGa8L9tbXbuh7eFzNISt3ElrYT7E2NohZJ8i0mbpfjp5Otnr2Kmf2AGn3nxsYGKT2Mea4Q8dE5IO8ncHmIbwW1Bz8gI4HoyPolut307D5gxghrk7agqhTcRuuRF4SPw9-kd_C88U5hA2QK5w9PTK6JbypYj_MM9JQoiXTn8NVBEahxU3g179_DOxIqL6EfZ9JF_IPFlNaE8DxpB0sA_nXTOyVehA" alt="Group Junior dancers" loading="lazy" />
+            <div class="category-card-v2__image-overlay"></div>
+            <span class="category-card-v2__badge">ALL AGES</span>
+          </div>
+          <div class="category-card-v2__body">
+            <h3 class="category-card-v2__title">Group Junior</h3>
+            <p class="category-card-v2__desc">Strength in numbers. Coordination and collective energy defined by the stars of tomorrow.</p>
+            <div class="category-card-v2__price-row">
+              <span class="category-card-v2__price">₹3000</span>
+              <span class="category-card-v2__price-label">Registration Fee</span>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full magnetic-btn">Register Now</a>
+            <div class="category-card-v2__contact">
+              <p>For queries call:</p>
+              <p>Apeksha – 87928 96356</p>
+              <p>Yashwanth – 8618261766</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group Senior -->
+        <div class="category-card-v2">
+          <div class="category-card-v2__image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNdsLluykRQxe8c1YsCn2tTlbdGXtg5pVc99mQwgJtUt_E0x5UrezBJvayFhsYGwnIMUDSc3T5G-Azb_1_F4uMiZ6KhYDM84D054bcrCL-lHS-Sfu1sF-96_iQmg5G-7zUwPQzGVs-uIuY6Z_4H2xRaSHLLtnVilIWCFT0uf2RUdnJhyehP-WgxnHPiMNqcMQHCLVhg3J_DDP8WBdRJB2cqAw_Do84X9d4u-ZJsptRRBNvF4K0sw7ESeuoPTb8aGEtP3IXuv6JZw" alt="Group Senior dancers" loading="lazy" />
+            <div class="category-card-v2__image-overlay"></div>
+            <span class="category-card-v2__badge">ALL AGES</span>
+          </div>
+          <div class="category-card-v2__body">
+            <h3 class="category-card-v2__title">Group Senior</h3>
+            <p class="category-card-v2__desc">The ultimate showcase. High-octane routines where discipline meets raw explosive power.</p>
+            <div class="category-card-v2__price-row">
+              <span class="category-card-v2__price">₹5000</span>
+              <span class="category-card-v2__price-label">Registration Fee</span>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full magnetic-btn">Register Now</a>
+            <div class="category-card-v2__contact">
+              <p>For queries call:</p>
+              <p>Apeksha – 87928 96356</p>
+              <p>Yashwanth – 8618261766</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RULES SECTION ===== -->
+  <section id="rules" class="rules section">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <span class="section__label">Guidelines</span>
+        <h2 class="section__title rules__title">Rules & Regulations</h2>
+        <p class="section__desc">Please read all rules carefully before participating. Compliance ensures a fair and professional environment for all elite performers.</p>
+      </div>
+
+      <div class="rules__grid">
+        <div class="rules__card reveal-up" data-delay="0">
+          <span class="rules__number">1.</span>
+          <p class="rules__text">The competition is open to all participants (school/college not mandatory).</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="50">
+          <span class="rules__number">2.</span>
+          <p class="rules__text">Each participant must complete registration before the deadline.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="100">
+          <span class="rules__number">3.</span>
+          <p class="rules__text">Any dance style is allowed (open style).</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="150">
+          <span class="rules__number">4.</span>
+          <p class="rules__text">Participants must carry their own music in MP3 format (with backup).</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="200">
+          <span class="rules__number">5.</span>
+          <p class="rules__text">Props are allowed but must be safe and self-managed.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="250">
+          <span class="rules__number">6.</span>
+          <p class="rules__text">Participants must report at least 30–60 minutes before the event.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="300">
+          <span class="rules__number">7.</span>
+          <p class="rules__text">No vulgar, offensive, or inappropriate songs/movements are allowed.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="350">
+          <span class="rules__number">8.</span>
+          <p class="rules__text">Use of dangerous items (fire, water, sharp objects, etc.) is strictly prohibited.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="400">
+          <span class="rules__number">9.</span>
+          <p class="rules__text">Participants must maintain discipline and proper stage conduct.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+        <div class="rules__card reveal-up" data-delay="450">
+          <span class="rules__number">10.</span>
+          <p class="rules__text">The judges' decision will be final and binding.</p>
+          <div class="rules__card-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERFORMANCE STANDARDS ===== -->
+  <section class="standards section">
+    <div class="container">
+      <div class="standards__inner reveal-up">
+        <div class="standards__image">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAKm9o7LEjEd4il_96LUNT6JwkJhGxoCFrg9ZQQA3HzGTbcS7sYcwu3oJ4-NsnjXbA_ZhcMbmmE0xUCui1B21cZyzcULuDEowiqIOb1thumAzl6y7_gdmWpcSS34LTE38rrzOQSlYP6vNWZPM4Q4VY0yXuuMRbhiJbo1d4PVwacB2gRF86ZNpS00zuItYimH8sy0HTnzdBmO1Xgs3qYiNsqs2w-54JSr6s0gkuvScZyMlVbvhHEg4tF_s8qznHiVdZBC76tl-akA" alt="Professional dancer on stage" loading="lazy" />
+          <div class="standards__image-overlay"></div>
+        </div>
+        <div class="standards__content">
+          <h2 class="standards__title">Performance Standards</h2>
+          <p class="standards__desc">At DDC, we uphold the highest standards of professional artistry. Every participant is expected to bring their absolute best to the stage while respecting the craft and their fellow competitors.</p>
+          <div class="standards__badges">
+            <div class="standards__badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>Elite Judging</span>
+            </div>
+            <div class="standards__badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Live Energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section id="faq" class="faq section">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <span class="section__label">Questions</span>
+        <h2 class="section__title">FAQ</h2>
+        <p class="section__desc">Got questions? We've got answers.</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item reveal-up" data-delay="0">
+          <button class="faq__question" id="faq-q-1" aria-expanded="false">
+            <span>Who can participate in DDC Season 2?</span>
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-a-1">
+            <p>DDC is open to dancers of all ages and skill levels. Whether you're a seasoned professional or a passionate beginner, there's a category for you — Solo, Duo, or Group.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal-up" data-delay="100">
+          <button class="faq__question" id="faq-q-2" aria-expanded="false">
+            <span>What is the registration fee?</span>
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-a-2">
+            <p>Registration fees vary by category. Solo: ₹500, Duo: ₹800, Group (3-10 members): ₹1500. Early bird discounts may apply.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal-up" data-delay="200">
+          <button class="faq__question" id="faq-q-3" aria-expanded="false">
+            <span>Where is the event held?</span>
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-a-3">
+            <p>The DDC Season 2 will be held at the Main Arena — a state-of-the-art venue with professional dance flooring, stage lighting, and premium sound systems. Exact address will be shared upon registration.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal-up" data-delay="300">
+          <button class="faq__question" id="faq-q-4" aria-expanded="false">
+            <span>What dance styles are allowed?</span>
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-a-4">
+            <p>All dance forms are welcome — contemporary, hip-hop, classical, Bollywood, freestyle, breaking, and more. Express yourself in any style that moves you.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal-up" data-delay="400">
+          <button class="faq__question" id="faq-q-5" aria-expanded="false">
+            <span>How are performances judged?</span>
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-a-5">
+            <p>Performances are evaluated by a panel of expert judges — world-class choreographers and dance masters — based on technique, creativity, stage presence, synchronization (for duos/groups), and overall impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== CTA / REGISTRATION SECTION ===== -->
+  <section id="register" class="register section">
+    <div class="register__bg">
+      <div class="register__glow register__glow--1"></div>
+      <div class="register__glow register__glow--2"></div>
+    </div>
+    <div class="container">
+      <div class="register__content">
+        <h2 class="register__title reveal-up">Ready to Own the Stage?</h2>
+        <p class="register__desc reveal-up" data-delay="100">Registration is open for all solo, duo, and group categories. Secure your spot in the championship today.</p>
+        <div class="register__actions reveal-up" data-delay="200">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyLy1BD2bwJpLeQ0RBQqy2SPrHPg33ZrpNjyy-k9jikBR-5A/viewform?usp=sharing&ouid=105980000422649941958" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg magnetic-btn" id="cta-register-btn">
+            Register Now
+          </a>
+          <a href="#" class="btn btn--outline btn--lg magnetic-btn" id="cta-rules-btn">
+            Download Rules
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <h3 class="footer__logo">DDC</h3>
+          <p class="footer__tagline">The ultimate platform for dancers to showcase their divine talent and passion.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+          <a href="#" class="footer__link">Contact Us</a>
+
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Divine Dance Championship. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
